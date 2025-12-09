@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Profissional TI</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h2>Codingtech</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Início</a>
+                <a href="sobre.html" class="nav-link">Sobre</a>
+                <a href="projetos.html" class="nav-link">Projetos</a>
+                <a href="servicos.html" class="nav-link">Serviços</a>
+                <a href="contato.html" class="nav-link active">Contato</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Entre em Contato</h1>
+            <p>Vamos conversar sobre seu projeto</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Envie uma Mensagem</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nome">Nome Completo *</label>
+                                <input type="text" id="nome" name="nome" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="telefone">Telefone</label>
+                                <input type="tel" id="telefone" name="telefone">
+                            </div>
+                            <div class="form-group">
+                                <label for="empresa">Empresa</label>
+                                <input type="text" id="empresa" name="empresa">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="servico">Tipo de Serviço *</label>
+                            <select id="servico" name="servico" required>
+                                <option value="">Selecione um serviço</option>
+                                <option value="desenvolvimento">Desenvolvimento Web/Sistema</option>
+                                <option value="investigacao">Investigação Digital</option>
+                                <option value="automacao">Automação/Chatbot</option>
+                                <option value="consultoria">Consultoria TI</option>
+                                <option value="outros">Outros</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem *</label>
+                            <textarea id="mensagem" name="mensagem" rows="6" placeholder="Descreva seu projeto ou necessidade em detalhes..." required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-container">
+                                <input type="checkbox" id="urgente" name="urgente">
+                                <span class="checkmark"></span>
+                                Projeto urgente (prazo menor que 30 dias)
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-container">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                Aceito receber informações sobre novos serviços e tecnologias
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    </form>
+
+                    <div id="form-message" class="form-message" style="display: none;"></div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2>Informações de Contato</h2>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h3>E-mail</h3>
+                            <p>codingtechbr@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h3>Telefone/WhatsApp</h3>
+                            <p>(75) 99238-7468</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">🌐</div>
+                        <div class="contact-details">
+                            <h3>Atendimento</h3>
+                            <p>Segunda a Sexta: 9h às 18h<br>Sábado: 9h às 12h</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">⚡</div>
+                        <div class="contact-details">
+                            <h3>Resposta</h3>
+                            <p>Até 24 horas úteis<br>Projetos urgentes: até 2 horas</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-cta">
+                        <h3>Prefere conversar diretamente?</h3>
+                        <p>Agende uma videochamada gratuita para discutir seu projeto.</p>
+                        <a href="https://wa.me/5511999999999" class="btn btn-whatsapp" target="_blank">
+                            WhatsApp Direto
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Perguntas Frequentes</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Quanto tempo leva para receber um orçamento?</h3>
+                    <p>Normalmente respondo em até 24 horas úteis. Para projetos urgentes, posso responder em até 2 horas.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Trabalha com contratos ou apenas projetos avulsos?</h3>
+                    <p>Trabalho tanto com projetos únicos quanto contratos de longo prazo, dependendo da necessidade do cliente.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Oferece suporte após a entrega do projeto?</h3>
+                    <p>Sim, todos os projetos incluem um período de garantia e suporte. Também ofereço planos de manutenção contínua.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Atende clientes de outras cidades/estados?</h3>
+                    <p>Sim, trabalho remotamente com clientes de todo o Brasil. Reuniões podem ser feitas por videoconferência.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Codingtech</h3>
+                    <p>Soluções versáteis em tecnologia da informação e investigação digital.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="servicos.html">Desenvolvimento</a></li>
+                        <li><a href="servicos.html">Investigação Digital</a></li>
+                        <li><a href="servicos.html">Automação</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>Email: codingtechbr@gmail.com</p>
+                    <p>Telefone: (75) 99238-7468</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Codingtech. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

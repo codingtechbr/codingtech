@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos - Profissional TI</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h2>Codingtech</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Início</a>
+                <a href="sobre.html" class="nav-link">Sobre</a>
+                <a href="projetos.html" class="nav-link active">Projetos</a>
+                <a href="servicos.html" class="nav-link">Serviços</a>
+                <a href="contato.html" class="nav-link">Contato</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Projetos Realizados</h1>
+            <p>Exemplos de trabalhos e soluções desenvolvidas</p>
+        </div>
+    </section>
+
+    <!-- Projects Filter -->
+    <section class="projects-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="desenvolvimento">Desenvolvimento</button>
+                <button class="filter-btn" data-filter="investigacao">Investigação</button>
+                <button class="filter-btn" data-filter="automacao">Automação</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-grid">
+        <div class="container">
+            <div class="projects-container">
+                <!-- Development Projects -->
+                <div class="project-card" data-category="desenvolvimento">
+                    <div class="project-image">
+                        <div class="image-placeholder">Sistema Hospitalar</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Desenvolvimento</div>
+                        <h3>Sistema de Gestão Hospitalar</h3>
+                        <p>Sistema completo para gestão de pacientes, prontuários eletrônicos e controle de medicamentos com interface intuitiva.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="desenvolvimento">
+                    <div class="project-image">
+                        <div class="image-placeholder">Portal Municipal</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Desenvolvimento</div>
+                        <h3>Portal de Transparência Municipal</h3>
+                        <p>Plataforma web para câmara municipal com sistema de transparência, publicação de atas e controle de despesas.</p>
+                        <div class="project-tech">
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="desenvolvimento">
+                    <div class="project-image">
+                        <div class="image-placeholder">Sistema Comercial</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Desenvolvimento</div>
+                        <h3>Sistema PDV para Supermercado</h3>
+                        <p>Solução completa de ponto de venda com controle de estoque, relatórios de vendas e integração fiscal.</p>
+                        <div class="project-tech">
+                            <span>C#</span>
+                            <span>.NET</span>
+                            <span>SQL Server</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Investigation Projects -->
+                <div class="project-card" data-category="investigacao">
+                    <div class="project-image">
+                        <div class="image-placeholder">Investigação Digital</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Investigação</div>
+                        <h3>Localização de Pessoa Desaparecida</h3>
+                        <p>Caso de sucesso na localização de pessoa desaparecida através de análise de pegadas digitais e OSINT.</p>
+                        <div class="project-tech">
+                            <span>OSINT</span>
+                            <span>Análise Forense</span>
+                            <span>Geolocalização</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="investigacao">
+                    <div class="project-image">
+                        <div class="image-placeholder">Fraude Digital</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Investigação</div>
+                        <h3>Investigação de Golpe Financeiro</h3>
+                        <p>Rastreamento e identificação de esquema de fraude online, com coleta de evidências para processo judicial.</p>
+                        <div class="project-tech">
+                            <span>Análise de Tráfego</span>
+                            <span>Blockchain</span>
+                            <span>Metadata</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="investigacao">
+                    <div class="project-image">
+                        <div class="image-placeholder">Recuperação Dados</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Investigação</div>
+                        <h3>Recuperação de Dados Críticos</h3>
+                        <p>Recuperação forense de dados de dispositivos danificados para investigação de fraude empresarial.</p>
+                        <div class="project-tech">
+                            <span>Forense Digital</span>
+                            <span>Recuperação HD</span>
+                            <span>Criptografia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Automation Projects -->
+                <div class="project-card" data-category="automacao">
+                    <div class="project-image">
+                        <div class="image-placeholder">Chatbot Médico</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Automação</div>
+                        <h3>Chatbot para Atendimento Médico</h3>
+                        <p>Bot inteligente para pré-triagem de pacientes, agendamento de consultas e informações básicas de saúde.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>NLP</span>
+                            <span>WhatsApp API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="automacao">
+                    <div class="project-image">
+                        <div class="image-placeholder">Automação Financeira</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Automação</div>
+                        <h3>Sistema de Automação Financeira</h3>
+                        <p>Automação de processos de cobrança, geração de relatórios e notificações automáticas para clientes.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>RPA</span>
+                            <span>Email API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="automacao">
+                    <div class="project-image">
+                        <div class="image-placeholder">Bot Atendimento</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Automação</div>
+                        <h3>Chatbot E-commerce</h3>
+                        <p>Bot para atendimento ao cliente em supermercado online, com consulta de produtos e status de pedidos.</p>
+                        <div class="project-tech">
+                            <span>Node.js</span>
+                            <span>Telegram API</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Tem um Projeto em Mente?</h2>
+                <p>Vamos conversar sobre como posso ajudar a tornar sua ideia realidade.</p>
+                <a href="contato.html" class="btn btn-primary">Iniciar Projeto</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Codingtech</h3>
+                    <p>Soluções versáteis em tecnologia da informação e investigação digital.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="servicos.html">Desenvolvimento</a></li>
+                        <li><a href="servicos.html">Investigação Digital</a></li>
+                        <li><a href="servicos.html">Automação</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>Email: codingtechbr@gmail.com</p>
+                    <p>Telefone: (75) 99238-7468</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Codingtech. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/projects.js"></script>
+</body>
+</html>
